@@ -25,10 +25,43 @@ namespace Asp.Net_end_project.Controllers
             ContactVM contactVM = new ContactVM
             {
                 Contact = contact,
-                SendMessage = sendMessage
+                SendMessage = new SendMessage()
             };
 
             return View(contactVM);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Index(SendMessage sendMessage)
+        {
+            try
+            {
+                if (!ModelState.IsValid)
+                {
+                    return RedirectToAction(nameof(Index));
+                }
+
+                bool isExist = await _context.SendMessages.AnyAsync(m =>
+                m.Name.Trim() == sendMessage.Name.Trim() &&
+                m.Email.Trim() == sendMessage.Email.Trim() &&
+                m.Phone.Trim() == sendMessage.Phone.Trim() &&
+                m.Message.Trim() == sendMessage.Message.Trim() &&
+                m.Subject.Trim() == sendMessage.Subject.Trim());
+
+                if (isExist)
+                {
+                    ModelState.AddModelError("Name", "Subject already exist!");
+                }
+
+                await _context.SendMessages.AddAsync(sendMessage);
+                await _context.SaveChangesAsync();
+
+                return RedirectToAction(nameof(Index));
+            }
+            catch (Exception)
+            {
+                return View();
+            }
         }
     }
 }
