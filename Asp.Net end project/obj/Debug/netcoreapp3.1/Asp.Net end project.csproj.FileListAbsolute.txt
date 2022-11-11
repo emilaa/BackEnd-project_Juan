@@ -319,3 +319,17 @@ C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Deb
 C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Razor\Views\Account\Register.cshtml.g.cs
 C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Debug\netcoreapp3.1\MailKit.dll
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Debug\netcoreapp3.1\MimeKit.dll
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Debug\netcoreapp3.1\System.Formats.Asn1.dll
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Debug\netcoreapp3.1\System.Security.Cryptography.Cng.dll
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Debug\netcoreapp3.1\System.Security.Cryptography.Pkcs.dll
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Debug\netcoreapp3.1\System.Text.Encoding.CodePages.dll
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Security.Cryptography.Cng.dll
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\System.Security.Cryptography.Pkcs.dll
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\System.Text.Encoding.CodePages.dll
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Razor\Views\Account\VerifyEmail.cshtml.g.cs
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Razor\Views\Account\ForgetPassword.cshtml.g.cs
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Razor\Views\Account\ResetPassword.cshtml.g.cs

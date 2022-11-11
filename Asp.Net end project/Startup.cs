@@ -1,6 +1,7 @@
 using Asp.Net_end_project.Data;
 using Asp.Net_end_project.Models;
 using Asp.Net_end_project.Services;
+using Asp.Net_end_project.Services.Interfaces;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
@@ -43,6 +44,8 @@ namespace Asp.Net_end_project
 
                 option.User.RequireUniqueEmail = true;
 
+                option.SignIn.RequireConfirmedEmail = true;
+
                 option.Lockout.MaxFailedAccessAttempts = 3;
                 option.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(5);
                 option.Lockout.AllowedForNewUsers = true;
@@ -52,7 +55,10 @@ namespace Asp.Net_end_project
             {
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
             });
+
             services.AddScoped<LayoutService>();
+            services.AddScoped<IEmailService, EmailService>();
+            services.AddScoped<IFileService, FileService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
