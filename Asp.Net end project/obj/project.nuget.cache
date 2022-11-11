@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "1Rj7WSzp27b8axhGmNA8B1JSgX5Vqsp3VDCIP7G5QMsQNMdayrZYSINh5zPQ9S0Wpw0qyy/NWefefTa6xLvFNg==",
+  "dgSpecHash": "crtiykpNPBVOt4QUgwGEH6jPwSFprRz8Zbfc4F15ZDtODY0JWa5renZcGA3AOhzMnbT/XKTYdx3NJg0OssmQwQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Emil Abdullayev\\Desktop\\Asp.Net-end-project\\Asp.Net end project\\Asp.Net end project.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Emil Abdullayev\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.29\\microsoft.aspnetcore.cryptography.internal.3.1.29.nupkg.sha512",
+    "C:\\Users\\Emil Abdullayev\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.29\\microsoft.aspnetcore.cryptography.keyderivation.3.1.29.nupkg.sha512",
     "C:\\Users\\Emil Abdullayev\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
+    "C:\\Users\\Emil Abdullayev\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\3.1.29\\microsoft.aspnetcore.identity.entityframeworkcore.3.1.29.nupkg.sha512",
     "C:\\Users\\Emil Abdullayev\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
     "C:\\Users\\Emil Abdullayev\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\3.1.0\\microsoft.aspnetcore.razor.language.3.1.0.nupkg.sha512",
     "C:\\Users\\Emil Abdullayev\\.nuget\\packages\\microsoft.aspnetcore.razor.runtime\\2.2.0\\microsoft.aspnetcore.razor.runtime.2.2.0.nupkg.sha512",
@@ -32,6 +35,8 @@
     "C:\\Users\\Emil Abdullayev\\.nuget\\packages\\microsoft.extensions.configuration.binder\\3.1.29\\microsoft.extensions.configuration.binder.3.1.29.nupkg.sha512",
     "C:\\Users\\Emil Abdullayev\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\3.1.29\\microsoft.extensions.dependencyinjection.3.1.29.nupkg.sha512",
     "C:\\Users\\Emil Abdullayev\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.1.29\\microsoft.extensions.dependencyinjection.abstractions.3.1.29.nupkg.sha512",
+    "C:\\Users\\Emil Abdullayev\\.nuget\\packages\\microsoft.extensions.identity.core\\3.1.29\\microsoft.extensions.identity.core.3.1.29.nupkg.sha512",
+    "C:\\Users\\Emil Abdullayev\\.nuget\\packages\\microsoft.extensions.identity.stores\\3.1.29\\microsoft.extensions.identity.stores.3.1.29.nupkg.sha512",
     "C:\\Users\\Emil Abdullayev\\.nuget\\packages\\microsoft.extensions.logging\\3.1.29\\microsoft.extensions.logging.3.1.29.nupkg.sha512",
     "C:\\Users\\Emil Abdullayev\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.1.29\\microsoft.extensions.logging.abstractions.3.1.29.nupkg.sha512",
     "C:\\Users\\Emil Abdullayev\\.nuget\\packages\\microsoft.extensions.options\\3.1.29\\microsoft.extensions.options.3.1.29.nupkg.sha512",

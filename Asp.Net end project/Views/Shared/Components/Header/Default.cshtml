@@ -37,6 +37,10 @@
                                         }
                                     </ul>
                                 </li>
+                                @if (User.Identity.IsAuthenticated)
+                                {
+                                    <li><h5 style="color:white">@User.Identity.Name</h5></li>
+                                }
                             </ul>
                         </div>
                     </div>
@@ -52,7 +56,7 @@
                     <div class="col-lg-2">
                         <div class="logo">
                             <a asp-controller="Home" asp-action="Index">
-                                 <img src="~/assets/img/logo/@Model.Settings["HeaderLogo"]" alt="">
+                                <img src="~/assets/img/logo/@Model.Settings["HeaderLogo"]" alt="">
                             </a>
                         </div>
                     </div>
@@ -101,9 +105,16 @@
                                             <i class="ion-ios-gear-outline"></i>
                                         </a>
                                         <ul class="dropdown-list">
-                                            <li><a href="login-register.html">login</a></li>
-                                            <li><a href="login-register.html">register</a></li>
-                                            <li><a href="my-account.html">my account</a></li>
+                                            @if (User.Identity.IsAuthenticated)
+                                            {
+                                                <li><a href="my-account.html">my account</a></li>
+                                                <li><a asp-controller="Account" asp-action="Logout">logout</a></li>
+                                            }
+                                            else
+                                            {
+                                                <li><a asp-controller="Account" asp-action="Login">login</a></li>
+                                                <li><a asp-controller="Account" asp-action="Register">register</a></li>
+                                            }
                                         </ul>
                                     </li>
                                     <li>
@@ -132,7 +143,7 @@
                     <div class="mobile-main-header">
                         <div class="mobile-logo">
                             <a href="index.html">
-                                 <img src="~/assets/img/logo/logo.png" alt="Brand Logo">
+                                <img src="~/assets/img/logo/logo.png" alt="Brand Logo">
                             </a>
                         </div>
                         <div class="mobile-menu-toggler">

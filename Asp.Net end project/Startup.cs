@@ -1,16 +1,14 @@
 using Asp.Net_end_project.Data;
+using Asp.Net_end_project.Models;
 using Asp.Net_end_project.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Asp.Net_end_project
 {
@@ -28,6 +26,28 @@ namespace Asp.Net_end_project
         {
             services.AddControllersWithViews();
 
+            services.AddSession(option =>
+            {
+                option.IdleTimeout = TimeSpan.FromSeconds(5);
+            });
+
+            services.AddIdentity<AppUser, IdentityRole>()
+                .AddEntityFrameworkStores<AppDbContext>()
+                .AddDefaultTokenProviders();
+
+            services.Configure<IdentityOptions>(option =>
+            {
+                option.Password.RequireDigit = true;
+                option.Password.RequiredLength = 8;
+                option.Password.RequireUppercase = false;
+
+                option.User.RequireUniqueEmail = true;
+
+                option.Lockout.MaxFailedAccessAttempts = 3;
+                option.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(5);
+                option.Lockout.AllowedForNewUsers = true;
+            });
+
             services.AddDbContext<AppDbContext>(options =>
             {
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
@@ -42,11 +62,16 @@ namespace Asp.Net_end_project
             {
                 app.UseDeveloperExceptionPage();
             }
-    
+
             app.UseHttpsRedirection();
+
             app.UseStaticFiles();
 
+            app.UseSession();
+
             app.UseRouting();
+
+            app.UseAuthentication();
 
             app.UseAuthorization();
 

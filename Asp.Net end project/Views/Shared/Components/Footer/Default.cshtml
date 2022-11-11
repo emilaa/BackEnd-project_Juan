@@ -1,8 +1,5 @@
 ﻿@model FooterVM
 
-
-
-
 <!-- Quick view modal start -->
 <div class="modal" id="quick_view">
     <div class="modal-dialog modal-lg modal-dialog-centered">
@@ -77,7 +74,7 @@
 <!-- Start Footer Area Wrapper -->
 <footer class="footer-wrapper">
     <!-- footer main area start -->
-    <div class="footer-widget-area section-padding">
+    <div class="footer-widget-area" style="padding:60px 0; margin-top:100px">
         <div class="container">
             <div class="row mtn-40">
                 <!-- footer widget item start -->
@@ -88,7 +85,7 @@
                             <ul class="location-wrap">
                                 <li><i class="ion-ios-location-outline"></i>@Model.Settings["Location"]</li>
                                 <li><i class="ion-ios-email-outline"></i><a href="mailto:yourmail@gmail.com">@Model.Settings["Email"]</a></li>
-                                <li><i class="ion-ios-telephone-outline"></i><a href="%2b0025425456554">@Model.Settings["Phone"]</a></li>
+                                <li><i class="ion-ios-telephone-outline"></i><a href="#">@Model.Settings["Phone"]</a></li>
                             </ul>
                         </div>
                     </div>

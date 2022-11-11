@@ -3,7 +3,6 @@ using Asp.Net_end_project.Models;
 using Asp.Net_end_project.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
