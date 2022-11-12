@@ -2,11 +2,13 @@
 
 @{
     ViewData["Title"] = "Index";
-
+    Layout = "~/Views/Shared/_Layout.cshtml";
     decimal endTotal = 0;
+
 }
 
 <main>
+    <!-- breadcrumb area start -->
     <div class="breadcrumb-area bg-img" data-bg="assets/img/banner/breadcrumb-banner.jpg">
         <div class="container">
             <div class="row">
@@ -15,7 +17,7 @@
                         <nav aria-label="breadcrumb">
                             <h1 class="breadcrumb-title">Cart</h1>
                             <ul class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">Home</a></li>
                                 <li class="breadcrumb-item active" aria-current="page">Cart</li>
                             </ul>
                         </nav>
@@ -24,11 +26,14 @@
             </div>
         </div>
     </div>
+    <!-- breadcrumb area end -->
+    <!-- cart main wrapper start -->
     <div class="cart-main-wrapper section-padding">
         <div class="container">
             <div class="section-bg-color">
                 <div class="row">
                     <div class="col-lg-12">
+                        <!-- Cart Table Area -->
                         <div class="cart-table table-responsive">
                             <table class="table table-bordered">
                                 <thead>
@@ -37,40 +42,37 @@
                                         <th class="pro-title">Product</th>
                                         <th class="pro-price">Price</th>
                                         <th class="pro-quantity">Quantity</th>
-                                        <th class="pro-subtotal">Total</th>
+                                        <th class="pro-subtotal">Total(Discount 10%)</th>
                                         <th class="pro-remove">Remove</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-
-                                    @foreach (var item in Model)
+                                    @foreach (BasketDetailVM product in Model)
                                     {
                                         <tr>
-                                            <td class="pro-thumbnail"><a href="#"><img class="img-fluid" src="assets/img/product/@item.Image" alt="Product" /></a></td>
-                                            <td class="pro-title"><a asp-controller="Product" asp-action="Index" asp-route-id="@item.Id">@item.Title</a></td>
-                                            <td class="pro-price"><span>$ @((item.Price-((item.Price/100)*item.DiscountPrice)).ToString("##.00"))</span></td>
+                                            <td class="pro-thumbnail"><a href="#"><img class="img-fluid" src="~/assets/img/product/@product.Image" alt="Product" /></a></td>
+                                            <td class="pro-title"><a href="#">@product.Name</a></td>
+                                            <td class="pro-price"><span>$@product.Price.ToString("0.#####")</span></td>
                                             <td class="pro-quantity">
                                                 <div class="pro-qty"><input type="text" value="1"></div>
                                             </td>
-                                            <td class="pro-subtotal"><span>$@item.Total.ToString("0.#####")</span></td>
-                                            <form asp-action="RemoveFromCart" asp-route-id="@item.Id" method="post">
-                                            <td class="pro-remove"><button type="submit"><i class="fa fa-trash-o"></i></button></td>
-                                            </form>
+                                            <td class="pro-subtotal"><span>$@((product.Total-((product.Total * 10)/100)).ToString("##.00"))</span></td>
+                                            <td class="pro-remove">
+                                                <form style="display: inline-block;" asp-controller="Basket" asp-action="Delete" asp-route-id="@product.Id" method="post">
+                                                    <button type="submit" class="minicart-remove"><i class="ion-android-close"></i></button>
+                                                </form>
+                                            </td>
                                         </tr>
-                                        endTotal += item.Total;
                                     }
+
+
                                 </tbody>
                             </table>
                         </div>
+                        <!-- Cart Update Option -->
                         <div class="cart-update-option d-block d-md-flex justify-content-between">
-                            <div class="apply-coupon-wrapper">
-                                <form action="#" method="post" class=" d-block d-md-flex">
-                                    <input type="text" placeholder="Enter Your Coupon Code" required />
-                                    <button class="btn">Apply Coupon</button>
-                                </form>
-                            </div>
                             <div class="cart-update">
-                                <a href="#" class="btn">Update Cart</a>
+                                <a asp-controller="Basket" asp-action="Index" class="btn">Update Cart</a>
                             </div>
                         </div>
                     </div>
@@ -83,10 +85,17 @@
                                 <h3>Cart Totals</h3>
                                 <div class="table-responsive">
                                     <table class="table">
-                                        <tr>
+                                        @foreach (var total in Model)
+                                        {
+                                            endTotal += total.Total - ((total.Total * 10) / 100);
+
+                                        }
+                                        <tr class="total">
                                             <td>Total</td>
-                                            <td>$ @endTotal.ToString("0.#####")</td>
+                                            <td class="total-amount">$@endTotal.ToString("0.#####")</td>
                                         </tr>
+
+
                                     </table>
                                 </div>
                             </div>
@@ -97,4 +106,24 @@
             </div>
         </div>
     </div>
+    @*<tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <th>
+                        <img style="width:100px;height:100px" src="~/img/@item.Image" alt="product image" />
+                    </th>
+                    <td>@item.Title</td>
+                    <td>@item.Count</td>
+                    <td>@item.Price.ToString("0.#####") ₼</td>
+                    <td>@item.Total.ToString("0.#####") ₼</td>
+                </tr>
+                endTotal += item.Total;
+            }
+
+            <h2>Total price: @endTotal.ToString("0.#####") ₼</h2>
+
+        </tbody>*@
+    <!-- cart main wrapper end -->
 </main>
+

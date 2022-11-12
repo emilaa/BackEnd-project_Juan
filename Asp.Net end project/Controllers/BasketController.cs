@@ -1,5 +1,4 @@
 ﻿using Asp.Net_end_project.Data;
-using Asp.Net_end_project.Models;
 using Asp.Net_end_project.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -18,8 +17,10 @@ namespace Asp.Net_end_project.Controllers
             _context = context;
         }
 
+
         public async Task<IActionResult> Index()
         {
+
             if (Request.Cookies["basket"] != null)
             {
                 List<BasketVM> basketItems = JsonConvert.DeserializeObject<List<BasketVM>>(Request.Cookies["basket"]);
@@ -27,22 +28,22 @@ namespace Asp.Net_end_project.Controllers
 
                 foreach (var item in basketItems)
                 {
-                    Product product = await _context.Products
+                    var product = await _context.Products
                         .Where(m => m.Id == item.Id && m.IsDeleted == false)
                         .Include(m => m.ProductImages).FirstOrDefaultAsync();
 
                     BasketDetailVM newBasket = new BasketDetailVM
                     {
-                        Title = product.Title,
+                        Id = product.Id,
+                        Name = product.Title,
                         Image = product.ProductImages.Where(m => m.IsMain).FirstOrDefault().Image,
                         Price = product.Price,
                         Count = item.Count,
-                        Total = product.Price * item.Count,
-                        DiscountPrice = (int)product.DiscountPrice,
-                        Id = product.Id
+                        Total = product.Price * item.Count
                     };
 
                     basketDetail.Add(newBasket);
+
                 }
                 return View(basketDetail);
             }
@@ -53,12 +54,14 @@ namespace Asp.Net_end_project.Controllers
             }
         }
 
-        public IActionResult RemoveFromCart(int? Id)
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Delete(int id)
         {
             List<BasketVM> basketItems = JsonConvert.DeserializeObject<List<BasketVM>>(Request.Cookies["basket"]);
             foreach (var item in basketItems)
             {
-                if (item.Id == Id)
+                if (item.Id == id)
                 {
                     basketItems.Remove(item);
                     Response.Cookies.Append("basket", JsonConvert.SerializeObject(basketItems));
@@ -66,6 +69,7 @@ namespace Asp.Net_end_project.Controllers
                 }
             }
             return RedirectToAction("Index", "Basket");
+
         }
     }
 }

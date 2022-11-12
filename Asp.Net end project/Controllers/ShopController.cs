@@ -1,8 +1,10 @@
 ﻿using Asp.Net_end_project.Data;
+using Asp.Net_end_project.Helper;
 using Asp.Net_end_project.Models;
 using Asp.Net_end_project.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,14 +18,15 @@ namespace Asp.Net_end_project.Controllers
         {
             _context = context;
         }
-        public async Task<ActionResult> Index(int page = 1, int take = 5)
+        public async Task<ActionResult> Index(int page = 1, int take = 9)
         {
-            IEnumerable<Product> products = await _context.Products
+            List<Product> products = await _context.Products
                 .Where(m => !m.IsDeleted)
                 .Include(m=>m.Categories)
                 .Include(m => m.ProductImages)
                 .Skip((page * take) - take)
                 .Take(take)
+                .OrderBy(m => m.Id)
                 .ToListAsync();
 
             IEnumerable<Categories> categories = await _context.Categories
@@ -31,13 +34,28 @@ namespace Asp.Net_end_project.Controllers
                 .Skip(6)
                 .ToListAsync();
 
+            int count = await GetPageCount(take);
+
+            List<ShopVM> shopList = new List<ShopVM>();
+
             ShopVM model = new ShopVM
             {
                 Products = products,
                 Categories = categories
             };
 
-            return View(model);
+            shopList.Add(model);
+
+            Paginate<ShopVM> result = new Paginate<ShopVM>(shopList, page, count);
+
+            return View(result);
+        }
+
+        private async Task<int> GetPageCount(int take)
+        {
+            int productCount = await _context.Products.Where(m => !m.IsDeleted).CountAsync();
+
+            return (int)Math.Ceiling((decimal)productCount / take);
         }
     }
 }

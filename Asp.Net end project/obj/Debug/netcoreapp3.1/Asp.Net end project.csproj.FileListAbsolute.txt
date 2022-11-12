@@ -333,3 +333,6 @@ C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Deb
 C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Razor\Views\Account\VerifyEmail.cshtml.g.cs
 C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Razor\Views\Account\ForgetPassword.cshtml.g.cs
 C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Razor\Views\Account\ResetPassword.cshtml.g.cs
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Razor\Views\Basket\Index.cshtml.g.cs
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\Category\Index.cshtml.g.cs
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\Category\Create.cshtml.g.cs

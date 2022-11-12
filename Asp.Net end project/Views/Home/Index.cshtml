@@ -27,7 +27,7 @@
                             </div>
                         }
                         <!-- single slider item end -->
-                    
+
                     </div>
                 </div>
             </div>
@@ -54,7 +54,7 @@
                     </div>
                 }
 
-             
+
             </div>
         </div>
     </section>
@@ -77,15 +77,17 @@
                         @foreach (var product in Model.Products)
                         {
                             <div class="product-item mb-50">
+                                <input style="display:none" value="@product.Id" />
                                 <div class="product-thumb">
                                     <a asp-controller="ProductDetail" asp-action="Index" asp-route-id="@product.Id">
-                                 
-                                            <img src="~/assets/img/product/@product.ProductImages.FirstOrDefault(m=>m.IsMain)?.Image" alt="">
 
-                                        
+                                        <img src="~/assets/img/product/@product.ProductImages.FirstOrDefault(m=>m.IsMain)?.Image" alt="">
+
+
                                     </a>
                                 </div>
                                 <div class="product-content">
+                                    <input style="display:none" value="@product.Id" />
                                     <h5 class="product-name">
                                         <a href="product-details.html">@product.Title</a>
                                     </h5>
@@ -95,7 +97,7 @@
                                     </div>
                                     <div class="product-action-link">
                                         <a href="#" data-toggle="tooltip" title="Wishlist"><i class="ion-android-favorite-outline"></i></a>
-                                        <a href="#" data-toggle="tooltip" title="Add To Cart"><i class="ion-bag"></i></a>
+                                        <a href="" style="cursor:pointer;" class="add-to-cart" data-toggle="tooltip" title="Add To Cart"><i class="ion-bag"></i></a>
                                         <a href="#" data-toggle="modal" data-target="#quick_view">
                                             <span data-toggle="tooltip"
                                                   title="Quick View"><i class="ion-ios-eye-outline"></i></span>
@@ -105,7 +107,7 @@
                             </div>
                         }
 
-                   
+
                     </div>
                 </div>
             </div>
@@ -131,7 +133,7 @@
                     </div>
                 }
 
-            
+
             </div>
         </div>
     </div>
@@ -160,7 +162,8 @@
                         @foreach (var item in Model.Products)
                         {
                             <div class="slide-item">
-                                <div class="pro-item-small mt-30">
+                                <div class="pro-item-small mt-30 product-item">
+                                    <input style="display:none" value="@item.Id" />
                                     <div class="product-thumb">
                                         <a href="product-details.html">
                                             <img src="~/assets/img/product/@item.ProductImages.FirstOrDefault(m=>m.IsMain)?.Image" alt="">
@@ -183,7 +186,7 @@
                                         </div>
                                         <div class="product-link-2">
                                             <a href="#" data-toggle="tooltip" title="Wishlist"><i class="ion-android-favorite-outline"></i></a>
-                                            <a href="#" data-toggle="tooltip" title="Add To Cart"><i class="ion-bag"></i></a>
+                                            <a href="" style="cursor:pointer;" class="add-to-cart" data-toggle="tooltip" title="Add To Cart"><i class="ion-bag"></i></a>
                                             <a href="#" data-toggle="modal" data-target="#quick_view">
                                                 <span data-toggle="tooltip"
                                                       title="Quick View"><i class="ion-ios-eye-outline"></i></span>
@@ -193,7 +196,7 @@
                                 </div>
                             </div>
                         }
-                    
+
                     </div>
                 </div>
             </div>
@@ -237,7 +240,7 @@
                             </div>
 
                         }
-              
+
                     </div>
                 </div>
             </div>
@@ -266,4 +269,10 @@
     <!-- brand area end -->
 </main>
 <!-- main wrapper end -->
+
+@section Ajax{
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js" integrity="sha512-rstIgDs0xPgmG6RX1Aba4KV5cWJbAMcvRCVmglpam9SoHZiUCyQVDdH2LPlxoHtrv17XWblE/V/PP+Tr04hbtA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>
+}
 
