@@ -155,6 +155,48 @@ C:\Users\OMEN\OneDrive\İş masası\Asp.Net end project\Asp.Net end project\Asp.
 C:\Users\OMEN\OneDrive\İş masası\Asp.Net end project\Asp.Net end project\Asp.Net end project\obj\Debug\netcoreapp3.1\Razor\Views\BlogDetail\Index.cshtml.g.cs
 C:\Users\OMEN\OneDrive\İş masası\Asp.Net end project\Asp.Net end project\Asp.Net end project\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\Shared\_AdminLayout.cshtml.g.cs
 C:\Users\OMEN\OneDrive\İş masası\Asp.Net end project\Asp.Net end project\Asp.Net end project\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\Dashboard\Index.cshtml.g.cs
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Asp.Net end project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Asp.Net end project.AssemblyInfoInputs.cache
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Asp.Net end project.AssemblyInfo.cs
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Asp.Net end project.csproj.CoreCompileInputs.cache
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Asp.Net end project.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Asp.Net end project.RazorAssemblyInfo.cache
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Asp.Net end project.RazorAssemblyInfo.cs
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\staticwebassets\Asp.Net end project.StaticWebAssets.Manifest.cache
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\staticwebassets\Asp.Net end project.StaticWebAssets.xml
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\scopedcss\bundle\Asp.Net end project.styles.css
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Asp.Net end project.TagHelpers.input.cache
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Asp.Net end project.TagHelpers.output.cache
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Asp.Net end project.RazorCoreGenerate.cache
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\Category\Create.cshtml.g.cs
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\Category\Detail.cshtml.g.cs
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\Category\Edit.cshtml.g.cs
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\Category\Index.cshtml.g.cs
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\Dashboard\Index.cshtml.g.cs
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\Shared\_AdminLayout.cshtml.g.cs
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\_ViewImports.cshtml.g.cs
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\_ViewStart.cshtml.g.cs
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Razor\Views\Account\ForgetPassword.cshtml.g.cs
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Razor\Views\Account\Register.cshtml.g.cs
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Razor\Views\Account\ResetPassword.cshtml.g.cs
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Razor\Views\Account\VerifyEmail.cshtml.g.cs
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Razor\Views\Basket\Index.cshtml.g.cs
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Razor\Views\BlogDetail\Index.cshtml.g.cs
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Razor\Views\Blog\Index.cshtml.g.cs
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Razor\Views\Contact\Index.cshtml.g.cs
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Razor\Views\ProductDetail\Index.cshtml.g.cs
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Footer\Default.cshtml.g.cs
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Header\Default.cshtml.g.cs
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Razor\Views\Shop\Index.cshtml.g.cs
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Asp.Net end project.RazorTargetAssemblyInfo.cache
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Asp.Net end project.RazorTargetAssemblyInfo.cs
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Asp.Net end project.dll
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Asp.Net end project.pdb
 C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Debug\netcoreapp3.1\Asp.Net end project.exe
 C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Debug\netcoreapp3.1\Asp.Net end project.deps.json
@@ -164,6 +206,10 @@ C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Deb
 C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Debug\netcoreapp3.1\Asp.Net end project.pdb
 C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Debug\netcoreapp3.1\Asp.Net end project.Views.dll
 C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Debug\netcoreapp3.1\Asp.Net end project.Views.pdb
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Debug\netcoreapp3.1\MailKit.dll
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
 C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
@@ -185,6 +231,8 @@ C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Deb
 C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
 C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
 C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
 C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
@@ -203,8 +251,10 @@ C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Deb
 C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
 C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
 C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Debug\netcoreapp3.1\MimeKit.dll
 C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
 C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
 C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Debug\netcoreapp3.1\System.Composition.AttributedModel.dll
 C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Debug\netcoreapp3.1\System.Composition.Convention.dll
@@ -213,9 +263,14 @@ C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Deb
 C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Debug\netcoreapp3.1\System.Composition.TypedParts.dll
 C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
 C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Debug\netcoreapp3.1\System.Formats.Asn1.dll
 C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Debug\netcoreapp3.1\System.Security.Cryptography.Cng.dll
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Debug\netcoreapp3.1\System.Security.Cryptography.Pkcs.dll
 C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Debug\netcoreapp3.1\System.Text.Encoding.CodePages.dll
 C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
 C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
 C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
@@ -275,64 +330,16 @@ C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Deb
 C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
 C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
-C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Asp.Net end project.csproj.AssemblyReference.cache
-C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Asp.Net end project.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Asp.Net end project.AssemblyInfoInputs.cache
-C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Asp.Net end project.AssemblyInfo.cs
-C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Asp.Net end project.csproj.CoreCompileInputs.cache
-C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Asp.Net end project.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Asp.Net end project.RazorAssemblyInfo.cache
-C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Asp.Net end project.RazorAssemblyInfo.cs
-C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\staticwebassets\Asp.Net end project.StaticWebAssets.Manifest.cache
-C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\staticwebassets\Asp.Net end project.StaticWebAssets.xml
-C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\scopedcss\bundle\Asp.Net end project.styles.css
-C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Asp.Net end project.TagHelpers.input.cache
-C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Asp.Net end project.TagHelpers.output.cache
-C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Asp.Net end project.RazorCoreGenerate.cache
-C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\Dashboard\Index.cshtml.g.cs
-C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\Shared\_AdminLayout.cshtml.g.cs
-C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\_ViewImports.cshtml.g.cs
-C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\_ViewStart.cshtml.g.cs
-C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Razor\Views\BlogDetail\Index.cshtml.g.cs
-C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Razor\Views\Blog\Index.cshtml.g.cs
-C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Razor\Views\Contact\Index.cshtml.g.cs
-C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
-C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Razor\Views\ProductDetail\Index.cshtml.g.cs
-C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Footer\Default.cshtml.g.cs
-C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Header\Default.cshtml.g.cs
-C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
-C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Razor\Views\Shop\Index.cshtml.g.cs
-C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
-C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
-C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Asp.Net end project.RazorTargetAssemblyInfo.cache
-C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Asp.Net end project.RazorTargetAssemblyInfo.cs
-C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Asp.Net end project.Views.pdb
-C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Asp.Net end project.csproj.CopyComplete
-C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Asp.Net end project.dll
-C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Asp.Net end project.pdb
-C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Asp.Net end project.genruntimeconfig.cache
-C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
-C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
-C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
-C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
-C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
-C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Razor\Views\Account\Register.cshtml.g.cs
-C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
-C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Debug\netcoreapp3.1\MailKit.dll
-C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Debug\netcoreapp3.1\MimeKit.dll
-C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
-C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Debug\netcoreapp3.1\System.Formats.Asn1.dll
-C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
-C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Debug\netcoreapp3.1\System.Security.Cryptography.Cng.dll
-C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Debug\netcoreapp3.1\System.Security.Cryptography.Pkcs.dll
-C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Debug\netcoreapp3.1\System.Text.Encoding.CodePages.dll
 C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Security.Cryptography.Cng.dll
 C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\System.Security.Cryptography.Pkcs.dll
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\System.Text.Encoding.CodePages.dll
-C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Razor\Views\Account\VerifyEmail.cshtml.g.cs
-C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Razor\Views\Account\ForgetPassword.cshtml.g.cs
-C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Razor\Views\Account\ResetPassword.cshtml.g.cs
-C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Razor\Views\Basket\Index.cshtml.g.cs
-C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\Category\Index.cshtml.g.cs
-C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\Category\Create.cshtml.g.cs
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Asp.Net end project.Views.pdb
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Asp.Net end project.csproj.CopyComplete
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Asp.Net end project.genruntimeconfig.cache
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Asp.Net end project.csproj.AssemblyReference.cache
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\Slider\Index.cshtml.g.cs
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\Slider\Create.cshtml.g.cs
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\Slider\Detail.cshtml.g.cs
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\Slider\Edit.cshtml.g.cs
+C:\Users\Emil Abdullayev\Desktop\Asp.Net-end-project\Asp.Net end project\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\Shared\_ValidationPartial.cshtml.g.cs

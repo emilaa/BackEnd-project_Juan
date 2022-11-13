@@ -24,6 +24,7 @@ namespace Asp.Net_end_project.Areas.AdminArea.Controllers
                 .Where(m => !m.IsDeleted)
                 .AsNoTracking()
                 .OrderByDescending(m => m.Id)
+                .Take(5)
                 .ToListAsync();
             return View(categories);
         }
