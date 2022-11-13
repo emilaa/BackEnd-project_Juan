@@ -13,20 +13,20 @@ using System.Threading.Tasks;
 namespace Asp.Net_end_project.Areas.AdminArea.Controllers
 {
     [Area("AdminArea")]
-    public class SliderController : Controller
+    public class ServiceController : Controller
     {
         private readonly AppDbContext _context;
         private readonly IWebHostEnvironment _env;
 
-        public SliderController(AppDbContext context, IWebHostEnvironment env)
+        public ServiceController(AppDbContext context, IWebHostEnvironment env)
         {
             _context = context;
             _env = env;
         }
         public async Task<IActionResult> Index()
         {
-            IEnumerable<Slider> sliders = await _context.Sliders.Where(m => !m.IsDeleted).ToListAsync();
-            return View(sliders);
+            IEnumerable<Service> services = await _context.Services.Where(m => !m.IsDeleted).ToListAsync();
+            return View(services);
         }
 
         [HttpGet]
@@ -37,34 +37,34 @@ namespace Asp.Net_end_project.Areas.AdminArea.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(Slider slider)
+        public async Task<IActionResult> Create(Service service)
         {
             if (!ModelState.IsValid) return View();
 
-            if (!slider.Photo.CheckFileType("image/"))
+            if (!service.Photo.CheckFileType("image/"))
             {
                 ModelState.AddModelError("Photo", "Please choose correct image type");
                 return View();
             }
 
-            if (!slider.Photo.CheckFileSize(200))
+            if (!service.Photo.CheckFileSize(200))
             {
                 ModelState.AddModelError("Photo", "Please choose correct image size");
                 return View();
             }
 
-            string fileName = Guid.NewGuid().ToString() + "_" + slider.Photo.FileName;
+            string fileName = Guid.NewGuid().ToString() + "_" + service.Photo.FileName;
 
-            string path = Helpers.GetFilePath(_env.WebRootPath, "assets/img/slider", fileName);
+            string path = Helpers.GetFilePath(_env.WebRootPath, "assets/img/icon", fileName);
 
             using (FileStream stream = new FileStream(path, FileMode.Create))
             {
-                await slider.Photo.CopyToAsync(stream);
+                await service.Photo.CopyToAsync(stream);
             }
 
-            slider.Image = fileName;
+            service.Image = fileName;
 
-            await _context.Sliders.AddAsync(slider);
+            await _context.Services.AddAsync(service);
 
             await _context.SaveChangesAsync();
 
@@ -76,11 +76,11 @@ namespace Asp.Net_end_project.Areas.AdminArea.Controllers
         {
             if (id == null) return BadRequest();
 
-            Slider slider = await _context.Sliders.FindAsync(id);
+            Service service = await _context.Services.FindAsync(id);
 
-            if (slider == null) return NotFound();
+            if (service == null) return NotFound();
 
-            return View(slider);
+            return View(service);
         }
 
         [HttpGet]
@@ -90,16 +90,15 @@ namespace Asp.Net_end_project.Areas.AdminArea.Controllers
             {
                 if (id is null) return BadRequest();
 
-                Slider slider = await _context.Sliders.FirstOrDefaultAsync(m => m.Id == id);
+                Service service = await _context.Services.FirstOrDefaultAsync(m => m.Id == id);
 
-                if (slider is null) return NotFound();
+                if (service is null) return NotFound();
 
-                return View(slider);
+                return View(service);
 
             }
             catch (Exception ex)
             {
-
                 ViewBag.Message = ex.Message;
                 return View();
             }
@@ -107,46 +106,46 @@ namespace Asp.Net_end_project.Areas.AdminArea.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, Slider slider)
+        public async Task<IActionResult> Edit(int id, Service service)
         {
             try
             {
                 if (!ModelState.IsValid)
                 {
-                    return View(slider);
+                    return View(service);
                 }
 
-                if (!slider.Photo.CheckFileType("image/"))
+                if (!service.Photo.CheckFileType("image/"))
                 {
                     ModelState.AddModelError("Photo", "Please choose correct image type");
                     return View();
                 }
 
-                string fileName = Guid.NewGuid().ToString() + "_" + slider.Photo.FileName;
+                string fileName = Guid.NewGuid().ToString() + "_" + service.Photo.FileName;
 
-                Slider dbSlider = await _context.Sliders.AsNoTracking().FirstOrDefaultAsync(m => m.Id == id);
+                Service dbService = await _context.Services.AsNoTracking().FirstOrDefaultAsync(m => m.Id == id);
 
-                if (dbSlider is null) return NotFound();
+                if (dbService is null) return NotFound();
 
-                if (dbSlider.Photo == slider.Photo)
+                if (dbService.Photo == service.Photo)
                 {
                     return RedirectToAction(nameof(Index));
                 }
 
-                string path = Helpers.GetFilePath(_env.WebRootPath, "assets/img/slider", fileName);
+                string path = Helpers.GetFilePath(_env.WebRootPath, "assets/img/icon", fileName);
 
                 using (FileStream stream = new FileStream(path, FileMode.Create))
                 {
-                    await slider.Photo.CopyToAsync(stream);
+                    await service.Photo.CopyToAsync(stream);
                 }
 
-                slider.Image = fileName;
+                service.Image = fileName;
 
-                _context.Sliders.Update(slider);
+                _context.Services.Update(service);
 
                 await _context.SaveChangesAsync();
 
-                string dbPath = Helpers.GetFilePath(_env.WebRootPath, "assets/img/slider", dbSlider.Image);
+                string dbPath = Helpers.GetFilePath(_env.WebRootPath, "assets/img/icon", dbService.Image);
 
                 Helpers.DeleteFile(dbPath);
 
@@ -155,7 +154,6 @@ namespace Asp.Net_end_project.Areas.AdminArea.Controllers
             }
             catch (Exception ex)
             {
-
                 ViewBag.Message = ex.Message;
                 return View();
             }
@@ -163,24 +161,24 @@ namespace Asp.Net_end_project.Areas.AdminArea.Controllers
 
         public async Task<IActionResult> Delete(int id)
         {
-            Slider slider = await GetByIdAsync(id);
+            Service service = await GetByIdAsync(id);
 
-            if (slider == null) return NotFound();
+            if (service == null) return NotFound();
 
-            string path = Helpers.GetFilePath(_env.WebRootPath, "img", slider.Image);
+            string path = Helpers.GetFilePath(_env.WebRootPath, "assets/img/icon", service.Image);
 
             Helpers.DeleteFile(path);
 
-            _context.Sliders.Remove(slider);
+            _context.Services.Remove(service);
 
             await _context.SaveChangesAsync();
 
             return RedirectToAction(nameof(Index));
         }
 
-        public async Task<Slider> GetByIdAsync(int id)
+        public async Task<Service> GetByIdAsync(int id)
         {
-            return await _context.Sliders.FindAsync(id);
+            return await _context.Services.FindAsync(id);
         }
     }
 }
