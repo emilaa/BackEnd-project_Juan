@@ -18,7 +18,7 @@ namespace Asp.Net_end_project.Controllers
         }
         public async Task<IActionResult> Index(int? id)
         {
-            Blog blog = await _context.Blogs.Where(m => !m.IsDeleted).FirstOrDefaultAsync(m => m.Id == id);
+            IEnumerable<Blog> blog = await _context.Blogs.Where(m => !m.IsDeleted).ToListAsync();
             IEnumerable<Blog> recentPosts = await _context.Blogs.Where(m => !m.IsDeleted).OrderByDescending(m => m.Id).ToListAsync();
             IEnumerable<Customer> customer = await _context.Customers
                 .Where(m => !m.IsDeleted)

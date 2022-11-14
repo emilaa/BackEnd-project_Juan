@@ -1,8 +1,10 @@
-﻿using Asp.Net_end_project.Models;
+﻿using Asp.Net_end_project.Helper.Enums;
+using Asp.Net_end_project.Models;
 using Asp.Net_end_project.Services.Interfaces;
 using Asp.Net_end_project.ViewModels.AccountViewModels;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Threading.Tasks;
 
 namespace Asp.Net_end_project.Controllers
@@ -10,17 +12,20 @@ namespace Asp.Net_end_project.Controllers
     public class AccountController : Controller
     {
         private readonly UserManager<AppUser> _userManager;
+        private readonly RoleManager<IdentityRole> _roleManager;
         private readonly SignInManager<AppUser> _signInManager;
         private readonly IEmailService _emailService;
         private readonly IFileService _fileService;
 
         public AccountController(UserManager<AppUser> userManager, 
-            SignInManager<AppUser> signInManager, 
+            SignInManager<AppUser> signInManager,
+            RoleManager<IdentityRole> roleManager,
             IEmailService emailService,
             IFileService fileService)
         {
             _userManager = userManager;
             _signInManager = signInManager;
+            _roleManager = roleManager;
             _emailService = emailService;
             _fileService = fileService;
         }
@@ -151,7 +156,7 @@ namespace Asp.Net_end_project.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> ForgetPassword()
+        public IActionResult ForgetPassword()
         {
             return View();
         }
@@ -196,7 +201,7 @@ namespace Asp.Net_end_project.Controllers
             return View(new ResetPasswordVM { Token = token, UserId = userId});
         }
 
-        public async Task<IActionResult> ConfirmResetPassword(ResetPasswordVM resetPassword)
+        public async Task<IActionResult> ResetPassword(ResetPasswordVM resetPassword)
         {
             if (!ModelState.IsValid)
             {
@@ -210,9 +215,26 @@ namespace Asp.Net_end_project.Controllers
                 return NotFound();
             }
 
+            if (await _userManager.CheckPasswordAsync(existUser, resetPassword.Password))
+            {
+                ModelState.AddModelError("", "Your password already exist!");
+                return View(resetPassword);
+            }
+
             await _userManager.ResetPasswordAsync(existUser, resetPassword.Token, resetPassword.Password);
 
-            return RedirectToAction(nameof(Login));
+            return RedirectToAction("Login", "Account");
+        }
+
+        public async Task CreateRoles()
+        {
+            foreach (var role in Enum.GetValues(typeof(Roles)))
+            {
+                if (!await _roleManager.RoleExistsAsync(role.ToString()))
+                {
+                    await _roleManager.CreateAsync(new IdentityRole { Name = role.ToString() });
+                }
+            }
         }
     }
 }

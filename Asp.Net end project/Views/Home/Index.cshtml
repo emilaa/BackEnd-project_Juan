@@ -123,11 +123,11 @@
                     <div class="col-md-6">
                         <div class="img-container mt-30">
                             <a href="product-details.html">
-                                <img src="~/assets/img/banner/@banner.Image" alt="banner-image">
+                                <img style="width:585px; height:250px" src="~/assets/img/banner/@banner.Image" alt="banner-image">
                             </a>
                             <div class="banner-text">
-                                <h5 class="banner-subtitle">@banner.SubTitle</h5>
-                                <h3 class="banner-title">20% Off<br>@banner.Title</h3>
+                                <h5 class="banner-subtitle">@Html.Raw(banner.SubTitle)</h5>
+                                <h3 class="banner-title">20% Off<br>@Html.Raw(banner.Title)</h3>
                             </div>
                         </div>
                     </div>

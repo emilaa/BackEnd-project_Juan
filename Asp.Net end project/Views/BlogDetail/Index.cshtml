@@ -111,31 +111,34 @@
                     <div class="row">
                         <div class="col-12">
                             <!-- blog single item start -->
-                            <div class="blog-post-item">
-                                <div class="blog-thumb">
-                                    <img src="~/assets/img/blog/@Model.Blog.Image" alt="blog thumb" />
-                                </div>
-                                <div class="blog-content blog-details">
-                                    <h5 @Model.Blog.Id class="blog-title">
-                                        @Model.Blog.Title
-                                    </h5>
-                                    <ul class="blog-meta">
-                                        <li><span>By: </span>@Model.Blog.Admin,</li>
-                                        <li><span>On: </span>@Model.Blog.CreateDate.ToString("dd MMMM yyyy")</li>
-                                    </ul>
-                                    <p>
-                                        @Model.Blog.Description
-                                    </p>
-                                    <blockquote>
+                            @foreach (var blog in Model.Blog)
+                            {
+                                <div class="blog-post-item">
+                                    <div class="blog-thumb">
+                                        <img src="~/assets/img/blog/@blog.Image" alt="blog thumb" />
+                                    </div>
+                                    <div class="blog-content blog-details">
+                                        <h5 class="blog-title">
+                                            @blog.Title
+                                        </h5>
+                                        <ul class="blog-meta">
+                                            <li><span>By: </span>@blog.Admin,</li>
+                                            <li><span>On: </span>@blog.CreateDate.ToString("dd MMMM yyyy")</li>
+                                        </ul>
                                         <p>
-                                            @Model.Blog.Description2
+                                            @blog.Description
                                         </p>
-                                    </blockquote>
-                                    <p>
-                                        @Model.Blog.Description3
-                                    </p>
+                                        <blockquote>
+                                            <p>
+                                                @blog.Description2
+                                            </p>
+                                        </blockquote>
+                                        <p>
+                                            @blog.Description3
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
+                            }
                             <!-- blog single item start -->
                             <!-- comment area start -->
                             <div class="comment-section section-padding">

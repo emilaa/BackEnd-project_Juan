@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using System.IO;
+using System.Threading.Tasks;
 
 namespace Asp.Net_end_project.Helper
 {
@@ -24,6 +25,14 @@ namespace Asp.Net_end_project.Helper
         {
             if (File.Exists(path))
                 File.Delete(path);
+        }
+
+        public static async Task SaveFile(string path, IFormFile photo)
+        {
+            using (FileStream stream = new FileStream(path, FileMode.Create))
+            {
+                await photo.CopyToAsync(stream);
+            }
         }
     }
 }
